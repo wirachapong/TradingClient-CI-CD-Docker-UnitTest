@@ -13,7 +13,7 @@ class TradingClient:
 
     def get_best_price(self, symbol='BTCUSDT', price_type='lowest'):
         """
-        Get the best price (either 'lowest' or 'highest') for BTC/USDT from both exchanges.
+        Get the best price (either 'lowest' or 'highest') for BTC/USDT from the exchanges.
         
         :param symbol: The trading symbol (default is BTC/USDT).
         :param price_type: Either 'lowest' for the best buying price or 'highest' for the best selling price.
