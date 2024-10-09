@@ -13,7 +13,7 @@ from cryptography.hazmat.primitives import hashes
 class BinanceClient:
     def __init__(self, testnet=True):
         """
-        Initialize the Binance Client using API key and private key from environment variables.
+        Initialize the Binance Client using API key and private key from provided environment variables.
         If `testnet=True`, it will use the Binance Testnet endpoint.
         """
         load_dotenv()  # Load environment variables from the .env file
