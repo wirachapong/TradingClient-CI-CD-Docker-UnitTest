@@ -34,6 +34,10 @@ jobs:
 
     - name: Run tests
       env:
+        BINANCE_TESTNET_API_KEY: ${{ secrets.BINANCE_TESTNET_API_KEY }}
+        BINANCE_TESTNET_KEY_PASSWORD: ${{ secrets.BINANCE_TESTNET_KEY_PASSWORD }}
+        BYBIT_TESTNET_API_KEY: ${{ secrets.BYBIT_TESTNET_API_KEY }}
+        BYBIT_TESTNET_API_SECRET: ${{ secrets.BYBIT_TESTNET_API_SECRET }}
         # Add your project root to PYTHONPATH so imports work
         PYTHONPATH: ${{ github.workspace }}
       run: |
