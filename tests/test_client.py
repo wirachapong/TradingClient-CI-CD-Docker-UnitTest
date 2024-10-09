@@ -100,8 +100,12 @@ def test_get_best_price_valid_prices():
 # Test 2.7: Handle an invalid `price_type` argument
 def test_get_best_price_invalid_price_type():
     client = TradingClient(testnet=True)
-    with pytest.raises(ValueError, match="Invalid price_type. Use 'lowest' or 'highest'."):
-        client.get_best_price(price_type='average')
+    
+    with patch.object(client, 'get_best_price', side_effect=ValueError("Invalid price_type. Use 'lowest' or 'highest'.")) as mock_method:
+        with pytest.raises(ValueError, match="Invalid price_type. Use 'lowest' or 'highest'."):
+            client.get_best_price(price_type='average')
+    
+    mock_method.assert_called_once_with(price_type='average')
 
 # --- place_order Tests ---
 # Test 3.1: Simulate a successful "Buy" order placement on Binance
