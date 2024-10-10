@@ -46,16 +46,11 @@ Here is a brief overview of the primary files and folders in the repository:
    ```
 
 #### 2. Prepare the environment
-<<<<<<< HEAD
-In a CI/CD environment, such as GitHub Actions, the .env file will not be present. Instead, GitHub Secrets will have to be set up to supply environment variables directly. Therefore, the line below is commented out to ensure it doesn’t cause errors in environments where the .env file is absent. 
 
-If you are running the project locally, you will need to create a .env file with the necessary variables, uncomment the line below in the Dockerfile, and then rebuild the image.
-=======
 In a CI/CD environment, such as GitHub Actions, the .env file will not be present. Instead, GitHub Secrets will have to be set up to supply environment variables directly. Therefore, the line below is commented out to ensure it doesn’t cause errors in environments where the .env file is absent. Also ensure that .env is also included in your .dockerignore.
 
 If you are running the project locally, you will need to create a .env file with the necessary variables, uncomment the line below in the Dockerfile, and then rebuild the image. Also ensure that .env is not present in your .dockerignore.
 
->>>>>>> e342ad0 (Update README.md)
    ```bash
    COPY .env .env
    ```
