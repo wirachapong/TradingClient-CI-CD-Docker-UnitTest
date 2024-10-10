@@ -19,8 +19,8 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 # Copy the rest of the application code
 COPY . .
 
-# Set up environment variables for the .env file
-COPY .env .env
+# # Set up environment variables for the .env file
+# COPY .env .env
 
 # Run the tests when the container starts
 CMD ["pytest", "tests"]
