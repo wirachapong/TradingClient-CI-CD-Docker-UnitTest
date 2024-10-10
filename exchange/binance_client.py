@@ -147,9 +147,9 @@ if __name__ == "__main__":
     binance_client = BinanceClient(testnet=True) 
 
     # Get the current BTC/USDT price
-    btcusdt_price = binance_client.get_btcusdt_price()
-    print(f"Current BTC/USDT price: {btcusdt_price}")
+    # btcusdt_price = binance_client.get_btcusdt_price()
+    # print(f"Current BTC/USDT price: {btcusdt_price}")
 
     # Place a market buy order for 0.003 BTC
-    order = binance_client.place_order('BTCUSDT', 'SELL', 0.2)
-    print(f"Order details: {order}")
+    # order = binance_client.place_order('BTCUSDT', 'SELL', 0.2)
+    # print(f"Order details: {order}")

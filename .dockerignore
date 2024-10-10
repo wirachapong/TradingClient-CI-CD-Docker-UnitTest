@@ -4,5 +4,5 @@ archive
 venv
 .env
 .gitignore
-Readme.md
+README.md
 .github

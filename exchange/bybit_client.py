@@ -120,9 +120,9 @@ if __name__ == "__main__":
     bybit_client = BybitClient(testnet=True)  # Set testnet=True to use testnet
 
     # Get the current price of BTC/USDT
-    price = bybit_client.get_price('BTCUSDT')
-    print(f"Current BTC/USDT price: {price}")
+    # price = bybit_client.get_price('BTCUSDT')
+    # print(f"Current BTC/USDT price: {price}")
 
     # Place a market buy order for 0.02 BTC
-    order = bybit_client.place_order('BTCUSDT', 'Sell', 0.01)
-    print(f"Order details: {order}")
+    # order = bybit_client.place_order('BTCUSDT', 'Sell', 0.01)
+    # print(f"Order details: {order}")

@@ -89,14 +89,14 @@ if __name__ == "__main__":
     trading_client = TradingClient(testnet=True)
 
     # Get the highest price and best exchange for selling BTC/USDT
-    highest_price, highest_price_exchange = trading_client.get_best_price(price_type='highest')
-    print(f"Highest price for BTC/USDT is {highest_price} on {highest_price_exchange}")
+    # highest_price, highest_price_exchange = trading_client.get_best_price(price_type='highest')
+    # print(f"Highest price for BTC/USDT is {highest_price} on {highest_price_exchange}")
 
     # Get the lowest price and best exchange for buying BTC/USDT
-    lowest_price, lowest_price_exchange = trading_client.get_best_price(price_type='lowest')
-    print(f"Lowest price for BTC/USDT is {lowest_price} on {lowest_price_exchange}")
+    # lowest_price, lowest_price_exchange = trading_client.get_best_price(price_type='lowest')
+    # print(f"Lowest price for BTC/USDT is {lowest_price} on {lowest_price_exchange}")
 
-    # # Place a market order on the best exchange for 0.001 BTC (Has to be "Buy" or "Sell"   (BUY or SELL not accepted))
+    # Place a market order on the best exchange for 0.001 BTC (Has to be "Buy" or "Sell"   (BUY or SELL not accepted))
     # order = trading_client.place_order('Buy', 0.001)
     # print(f"Order placed: {order}")
 
