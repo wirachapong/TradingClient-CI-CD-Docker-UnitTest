@@ -2,3 +2,7 @@ __pycache__
 .pytest_cache
 archive
 venv
+.env
+.gitignore
+Readme.md
+.github
