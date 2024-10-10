@@ -1,1 +1,0 @@
-# TradingClient-CI-CD-Docker-UnitTest
